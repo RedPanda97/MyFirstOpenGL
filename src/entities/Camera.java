@@ -15,17 +15,24 @@ public class Camera {
 
     public void move(){
         if (Keyboard.isKeyDown(Keyboard.KEY_W)){
-            pos.z -= 0.02f;
+            pos.z -= 0.2f;
         }
         if (Keyboard.isKeyDown(Keyboard.KEY_S)){
-            pos.z += 0.02f;
+            pos.z += 0.2f;
         }
         if (Keyboard.isKeyDown(Keyboard.KEY_D)){
-            pos.x += 0.02f;
+            pos.x += 0.2f;
         }
         if (Keyboard.isKeyDown(Keyboard.KEY_A)){
-            pos.x -= 0.02f;
+            pos.x -= 0.2f;
         }
+        if (Keyboard.isKeyDown(Keyboard.KEY_R)){
+            pos.y += 0.2f;
+        }
+        if (Keyboard.isKeyDown(Keyboard.KEY_F)){
+            pos.y -= 0.2f;
+        }
+
 
     }
 
